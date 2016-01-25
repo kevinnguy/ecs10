@@ -1,0 +1,1389 @@
+
+<!-- saved from url=(0052)http://csiflabs.cs.ucdavis.edu/~ssdavis/10/prog5.htm -->
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns:st1="urn:schemas-microsoft-com:office:smarttags" xmlns="http://www.w3.org/TR/REC-html40"><script type="text/javascript">window["_gaUserPrefs"] = { ioo : function() { return true; } }</script><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<meta name="ProgId" content="Word.Document">
+<meta name="Generator" content="Microsoft Word 12">
+<meta name="Originator" content="Microsoft Word 12">
+<link rel="File-List" href="http://csiflabs.cs.ucdavis.edu/~ssdavis/10/prog5_files/filelist.xml">
+<title>ECS 10 Program #5</title>
+<script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script></head><body lang="EN-US" style="tab-interval:.5in"><o:smarttagtype namespaceuri="urn:schemas-microsoft-com:office:smarttags" name="PersonName">
+<o:smarttagtype namespaceuri="urn:schemas-microsoft-com:office:smarttags" name="place">
+<o:smarttagtype namespaceuri="urn:schemas-microsoft-com:office:smarttags" name="City">
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Sean Davis</o:Author>
+  <o:LastAuthor>Sean Davis</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>12</o:TotalTime>
+  <o:LastPrinted>2007-07-25T04:45:00Z</o:LastPrinted>
+  <o:Created>2009-07-21T17:08:00Z</o:Created>
+  <o:LastSaved>2009-07-21T17:08:00Z</o:LastSaved>
+  <o:Pages>4</o:Pages>
+  <o:Words>1590</o:Words>
+  <o:Characters>9066</o:Characters>
+  <o:Company>University of California at Davis</o:Company>
+  <o:Lines>75</o:Lines>
+  <o:Paragraphs>21</o:Paragraphs>
+  <o:CharactersWithSpaces>10635</o:CharactersWithSpaces>
+  <o:Version>12.00</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<link rel="themeData" href="http://csiflabs.cs.ucdavis.edu/~ssdavis/10/prog5_files/themedata.thmx">
+<link rel="colorSchemeMapping" href="http://csiflabs.cs.ucdavis.edu/~ssdavis/10/prog5_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>
+  <w:UseMarginsForDrawingGridOrigin/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:DontVertAlignCellWithSp/>
+   <w:DontBreakConstrainedForcedTables/>
+   <w:DontVertAlignInTxbx/>
+   <w:Word11KerningPairs/>
+   <w:CachedColBalance/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" LatentStyleCount="267">
+  <w:LsdException Locked="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:1;
+	mso-generic-font-family:roman;
+	mso-font-format:other;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:1627400839 -2147483648 8 0 66047 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-noshow:yes;
+	mso-style-unhide:no;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-fareast-font-family:"Times New Roman";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:.5in .5in .5in .5in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+@page Section2
+	{size:8.5in 11.0in;
+	margin:.5in .5in .5in .5in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-columns:2 not-even 3.5in .5in 3.5in;
+	mso-paper-source:0;}
+div.Section2
+	{page:Section2;}
+@page Section3
+	{size:8.5in 11.0in;
+	margin:.5in .5in .5in .5in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-columns:2 not-even 3.5in .5in 3.5in;
+	mso-paper-source:0;}
+div.Section3
+	{page:Section3;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:1248005521;
+	mso-list-template-ids:2044647942;}
+@list l0:level1
+	{mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l0:level2
+	{mso-level-text:"%1\.%2\.";
+	mso-level-tab-stop:.55in;
+	mso-level-number-position:left;
+	margin-left:.55in;
+	text-indent:-.3in;}
+@list l0:level3
+	{mso-level-suffix:space;
+	mso-level-text:"%1\.%2\.%3\.";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.85in;
+	text-indent:-.35in;}
+@list l0:level4
+	{mso-level-text:"%1\.%2\.%3\.%4\.";
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.2in;
+	text-indent:-.45in;}
+@list l0:level5
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.";
+	mso-level-tab-stop:1.75in;
+	mso-level-number-position:left;
+	margin-left:1.55in;
+	text-indent:-.55in;}
+@list l0:level6
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.";
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	margin-left:1.9in;
+	text-indent:-.65in;}
+@list l0:level7
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.";
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.75in;}
+@list l0:level8
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8\.";
+	mso-level-tab-stop:2.75in;
+	mso-level-number-position:left;
+	margin-left:2.6in;
+	text-indent:-.85in;}
+@list l0:level9
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8\.%9\.";
+	mso-level-tab-stop:3.25in;
+	mso-level-number-position:left;
+	margin-left:3.0in;
+	text-indent:-1.0in;}
+@list l1
+	{mso-list-id:1636330535;
+	mso-list-template-ids:1114259376;}
+@list l1:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l1:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+@list l1:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:4.5in;
+	mso-level-number-position:right;
+	text-indent:-9.0pt;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+
+
+
+
+<div class="Section1">
+
+<p class="MsoNormal"><b style="mso-bidi-font-weight:normal">ECS 10<span style="mso-tab-count:6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Program
+#5 (50 points)<span style="mso-tab-count:3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="GramE">Summer</span> 2009<o:p></o:p></b></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Due: Tuesday, July 28th, 11:59pm.<span style="mso-spacerun:yes">&nbsp; </span>Filename: airline.py.<span style="mso-spacerun:yes">&nbsp; </span>No flow charts, error journals, or written
+homework.</p>
+
+<p class="MsoNormal">New concepts:<span style="mso-spacerun:yes">&nbsp; </span>sort, search,
+list of lists, menus, and exception handling. </p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal"><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>You are to
+write an airline reservation program for a small shuttle airline called Fly <span class="GramE">By</span> Night Airlines.<span style="mso-spacerun:yes">&nbsp;&nbsp;
+</span>The airline will have only four flights between three cities.<span style="mso-spacerun:yes">&nbsp; </span>The airline allows reservations for specific
+seats on the plane.</p>
+
+<p class="MsoNormal" style="text-indent:.5in">When a customer reserves seat(s) on
+a flight, the program asks for his/her name.<span style="mso-spacerun:yes">&nbsp;&nbsp;
+</span>The program will then associate the name with a seat reservation.<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>A seat reservation contains a flight number
+and the number of seats reserved by the customer.<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>When a customer wants to cancel a flight,
+the program asks for 1) flight number, 2) seats to cancel, and 3) the customer's
+name.<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>The program will only cancel the
+customer’s reservation if he/she has already reserved that number (exactly) of
+seats for the flight.<span style="mso-spacerun:yes">&nbsp; </span>The management
+also wants to be able to see an alphabetically sorted list of all customers that
+have reserved seats.<span style="mso-spacerun:yes">&nbsp; </span>The list should be
+sorted by last names.<span style="mso-spacerun:yes">&nbsp; </span></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+<p class="MsoNormal">Specifications:</p>
+
+<p class="MsoNormal" style="margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+tab-stops:list .25in"><!--[if !supportLists]--><span style="mso-list:Ignore">1.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><!--[endif]-->Flights</p>
+
+<p class="MsoNormal" style="margin-left:.55in;text-indent:-.3in;mso-list:l0 level2 lfo1;
+tab-stops:list .55in"><!--[if !supportLists]--><span style="mso-list:Ignore">1.1.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span><!--[endif]-->Each
+of the flights has associated with it a flight number, an origin city, a
+destination city, and the number of seats reserved.<span style="mso-spacerun:yes">&nbsp; </span><span style="mso-spacerun:yes">&nbsp;</span>Each
+flight can only hold six passengers.<span style="mso-spacerun:yes">&nbsp; </span></p>
+
+<p class="MsoNormal" style="margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+tab-stops:list .25in"><!--[if !supportLists]--><span style="mso-list:Ignore">2.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><!--[endif]-->Files:
+There are two files associated with the reservation system.</p>
+
+<p class="MsoNormal" style="margin-left:.55in;text-indent:-.3in;mso-list:l0 level2 lfo1;
+tab-stops:list .55in"><!--[if !supportLists]--><span style="mso-list:Ignore">2.1.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span><!--[endif]-->Both
+files are available from the course website.<span style="mso-spacerun:yes">&nbsp;
+</span>Copy these files to the directory in which you write your program.<span style="mso-spacerun:yes">&nbsp; </span>To make debugging easier, neither file should
+be updated when reservations are changed.</p>
+
+<p class="MsoNormal" style="margin-left:.55in;text-indent:-.3in;mso-list:l0 level2 lfo1;
+tab-stops:list .55in"><!--[if !supportLists]--><span style="mso-list:Ignore">2.2.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span><!--[endif]-->The
+values for all of this information for all of the flights are stored in the
+file flights.txt.<span style="mso-spacerun:yes">&nbsp; </span>The format for this
+file is: </p>
+
+<p class="MsoNormal" style="margin-left:.5in;text-indent:.5in">Description:<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Flight <span class="GramE">#<span style="mso-spacerun:yes">&nbsp; </span>comma</span> <span style="mso-spacerun:yes">&nbsp;&nbsp;</span>Origin<span style="mso-spacerun:yes">&nbsp;
+</span><span style="mso-spacerun:yes">&nbsp;</span>comma Reserved comma Destination</p>
+
+<p class="MsoNormal" style="margin-left:.5in;text-indent:.5in">Data type:<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span class="SpellE">int</span>&gt;<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp; </span> <span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun:yes">&nbsp;</span><span style="mso-spacerun:yes">&nbsp;</span>&lt;string&gt;
+<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun:yes">&nbsp;&nbsp;</span><span style="mso-spacerun:yes">&nbsp;&nbsp;</span>&lt;<span class="SpellE">int</span>&gt; <span style="mso-spacerun:yes">&nbsp;&nbsp;</span><span style="mso-spacerun:yes">&nbsp;</span><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>&lt;string&gt;</p>
+
+<p class="MsoNormal" style="margin-left:.55in;text-indent:-.3in;mso-list:l0 level2 lfo1;
+tab-stops:list .55in"><!--[if !supportLists]--><span style="mso-list:Ignore">2.3.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span><!--[endif]--><span style="mso-spacerun:yes">&nbsp;</span><span class="GramE">passenger.txt</span>
+contains a list of seat reservations with the associated passenger names.<span style="mso-spacerun:yes">&nbsp; </span>The format of each line in passengers.txt is:</p>
+
+<p class="MsoNormal" style="margin-left:.5in;text-indent:.5in">Description: <span class="SpellE"><span class="GramE">FlightNo</span></span><span class="GramE"><span style="mso-spacerun:yes">&nbsp; </span>comma</span><span style="mso-spacerun:yes">&nbsp;
+</span><span class="SpellE">NumSeats</span> comma<span style="mso-spacerun:yes">&nbsp;
+</span>Name</p>
+
+<p class="MsoNormal" style="margin-left:1.0in">Data type:<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>&lt;<span class="SpellE">int</span>&gt; <span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun:yes">&nbsp;&nbsp;</span>&lt;<span class="SpellE">int</span>&gt;<span style="mso-tab-count:1">&nbsp; </span><span style="mso-spacerun:yes">&nbsp; </span><span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun:yes">&nbsp;&nbsp;</span>&lt;string&gt;</p>
+
+<p class="MsoNormal" style="margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+tab-stops:list .25in"><!--[if !supportLists]--><span style="mso-list:Ignore">3.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><!--[endif]-->Menu
+system</p>
+
+<p class="MsoNormal" style="margin-left:.55in;text-indent:-.3in;mso-list:l0 level2 lfo1;
+tab-stops:list .55in"><!--[if !supportLists]--><span style="mso-list:Ignore">3.1.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span><!--[endif]-->Implement
+and provide a menu for the following choices:<span style="mso-spacerun:yes">&nbsp;
+</span>1) Make a reservation<span class="GramE">;<span style="mso-spacerun:yes">&nbsp;
+</span>2</span>) Cancel a reservation; and <span style="mso-spacerun:yes">&nbsp;</span>3)<span style="mso-spacerun:yes">&nbsp;
+</span>Display all information about all flights.</p>
+
+<p class="MsoNormal" style="margin-left:.55in;text-indent:-.3in;mso-list:l0 level2 lfo1;
+tab-stops:list .55in"><!--[if !supportLists]--><span style="mso-list:Ignore">3.2.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span><!--[endif]-->To
+make a reservation, the program 1) displays flight numbers with their
+cities;<span style="mso-spacerun:yes">&nbsp; </span>2) reads flight number 3) reads
+number of seats to reserve; 4) notifies the<span style="mso-spacerun:yes">&nbsp;
+</span>user whether the request can be satisfied;<span style="mso-spacerun:yes">&nbsp; </span>5) if the request is an acceptable then
+update the number of seats reserved for the plane.</p>
+
+<p class="MsoNormal" style="margin-left:.55in;text-indent:-.3in;mso-list:l0 level2 lfo1;
+tab-stops:list .55in"><!--[if !supportLists]--><span style="mso-list:Ignore">3.3.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span><!--[endif]-->To
+cancel a reservation, the program 1) displays flight numbers with their cities<span class="GramE">;<span style="mso-spacerun:yes">&nbsp; </span>2</span>) reads flight
+number 3) reads number of seats to cancel; 4) notifies the user whether the
+request can be satisfied (to satisfy such a request there must be at least as
+many seats already reserved as the cancellation requests to cancel);<span style="mso-spacerun:yes">&nbsp; </span>5) if the request is an acceptable then
+update the number of seats reserved for the plane.</p>
+
+<p class="MsoNormal" style="margin-left:.55in;text-indent:-.3in;mso-list:l0 level2 lfo1;
+tab-stops:list .55in"><!--[if !supportLists]--><span style="mso-list:Ignore">3.4.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span><!--[endif]-->The
+flight information display should have the following format:</p>
+
+<p class="MsoNormal" style="margin-left:.85in;text-indent:-.35in;mso-list:l0 level3 lfo1"><!--[if !supportLists]--><span style="mso-list:Ignore">3.4.1. </span><!--[endif]-->Flight # (3 digits)
+&lt;space&gt; Origin(10 characters) &lt;space&gt; Destination(10 characters)
+&lt;space&gt;<span style="mso-spacerun:yes">&nbsp; </span>Reserved(1 digit)</p>
+
+<p class="MsoNormal" style="margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+tab-stops:list .25in"><!--[if !supportLists]--><span style="mso-list:Ignore">4.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><!--[endif]-->Implementation:<span style="mso-spacerun:yes">&nbsp; </span></p>
+
+<p class="MsoNormal" style="margin-left:.55in;text-indent:-.3in;mso-list:l0 level2 lfo1;
+tab-stops:list .55in"><!--[if !supportLists]--><span style="mso-list:Ignore">4.1.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span><!--[endif]-->Origin
+city, destination city, and reserved seats of the flights must all be stored in
+a list of lists.<span style="mso-spacerun:yes">&nbsp; </span></p>
+
+<p class="MsoNormal" style="margin-left:.55in;text-indent:-.3in;mso-list:l0 level2 lfo1;
+tab-stops:list .55in"><!--[if !supportLists]--><span style="mso-list:Ignore">4.2.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span><!--[endif]-->Each passenger
+name will only be associated with one flight reservation.<span style="mso-spacerun:yes">&nbsp; </span>That means you don’t have to <span class="SpellE">worrry</span> about one customer having two reservations.<span style="mso-spacerun:yes">&nbsp; </span>(This makes the name search easier, since you
+may stop the search when you find the first name match.)<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>The information about seat reservations
+must be maintained in a list of lists that holds the flight number, seats
+reserved, the first name, and last name of each passenger.</p>
+
+<p class="MsoNormal" style="margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+tab-stops:list .25in"><!--[if !supportLists]--><span style="mso-list:Ignore">5.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><!--[endif]-->Testing:<span style="mso-spacerun:yes">&nbsp; </span>A testing regimen of valid input data is
+supplied on the back.<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>Your program must
+be robust! <span style="mso-spacerun:yes">&nbsp;</span>You may <u>not</u> assume
+that the user will enter integers where appropriate.<span style="mso-spacerun:yes">&nbsp; </span></p>
+
+<p class="MsoNormal" style="margin-left:.25in;text-indent:-.25in;mso-list:l0 level1 lfo1;
+tab-stops:list .25in"><!--[if !supportLists]--><span style="mso-list:Ignore">6.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span><!--[endif]-->Hints:<span style="mso-spacerun:yes">&nbsp; </span>Remember to use top-down design to break the
+program into manageable procedures.<span style="mso-spacerun:yes">&nbsp;
+</span>Notice that the processes for making and canceling reservations are
+almost identical.<span style="mso-spacerun:yes">&nbsp; </span>Once you have one
+those functions written and debugged, just copy it and change a few words and
+conditions to create the other function.<span style="mso-spacerun:yes">&nbsp;
+</span>These functions should call at least three other functions.</p>
+
+<p class="MsoNormal" style="margin-left:.55in;text-indent:-.3in;mso-list:l0 level2 lfo1;
+tab-stops:list .55in"><!--[if !supportLists]--><span style="mso-list:Ignore">6.1.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span><!--[endif]-->Example
+of creating and using a list of lists</p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;">&gt;&gt;&gt;
+<span class="GramE">line</span> = "Sean <span class="SpellE">Davis,wrote,this</span>."<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;">&gt;&gt;&gt;
+import string<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;">&gt;&gt;&gt;
+<span class="GramE">line</span> = <span class="SpellE">string.split</span>(line,",")<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;">&gt;&gt;&gt;
+<span class="GramE">line</span><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;">['Sean
+Davis', 'wrote', 'this.']<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;">&gt;&gt;&gt;
+List = [line]<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;">&gt;&gt;&gt;
+List<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;">[['Sean
+Davis', 'wrote', 'this.']]<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;">&gt;&gt;&gt;
+line2 = <span class="SpellE"><span class="GramE">string.split</span></span><span class="GramE">(</span>"Another line")<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;">&gt;&gt;&gt;
+line2<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;">['Another',
+'line']<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;">&gt;&gt;&gt;
+List += [line]<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;">&gt;&gt;&gt;
+List<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;">[['Sean
+Davis', 'wrote', 'this.'], ['Sean Davis', 'wrote', 'this.']]<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;">&gt;&gt;&gt;
+List += [line2]<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;">&gt;&gt;&gt;
+List<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;">[['Sean
+Davis', 'wrote', 'this.'], ['Sean Davis', 'wrote', 'this.'], ['Another',
+'line']]<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;">&gt;&gt;&gt;
+print <span class="GramE">List[</span>2][1]<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span class="GramE"><span style="font-family:&quot;Courier New&quot;">line</span></span><span style="font-family:
+&quot;Courier New&quot;"><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;">&gt;&gt;&gt;<o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.55in;text-indent:-.3in;mso-list:l0 level2 lfo1;
+tab-stops:list .55in"><!--[if !supportLists]--><span style="mso-list:Ignore">6.2.<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span><!--[endif]-->Example
+of using a try-except in a range checking loop that allows only positive
+numbers:</p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;">&gt;&gt;&gt;
+<span class="GramE">def</span> <span class="SpellE">rangeCheck</span>():<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:1">&nbsp;&nbsp; </span><span class="GramE">num</span> = -1<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:1">&nbsp;&nbsp; </span><span class="GramE">while</span> num &lt; 0 :<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="GramE">num</span> = <span class="SpellE">raw_input</span>("Please enter a positive number: ")<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="GramE">try :</span><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="GramE">num</span> =
+int(num)<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="GramE">except</span> <span class="SpellE">ValueError</span>:<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;"><span style="mso-tab-count:3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span class="GramE">num</span> = -1<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;">&gt;&gt;&gt;
+<span class="SpellE"><span class="GramE">rangeCheck</span></span><span class="GramE">()</span><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;">Please
+enter a positive number: -1<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;">Please
+enter a positive number: <span class="SpellE">qeopriu</span><o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;">Please
+enter a positive number: 4<o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-family:&quot;Courier New&quot;">&gt;&gt;&gt;<o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+</div>
+
+<span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA"><br clear="all" style="page-break-before:auto;
+mso-break-type:section-break">
+</span>
+
+<div class="Section2">
+
+<p class="MsoNormal">Actual passengers.txt:</p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;">101<span class="GramE">,3,Matt</span> Wong<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;">82<span class="GramE">,3,Trevor</span>
+Wilson<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;">103<span class="GramE">,3,Barry</span> Bonds<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;">101<span class="GramE">,2,Vanessa</span> Williams<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;">82<span class="GramE">,1,William</span>
+Clinton<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;">82<span class="GramE">,1,Matt</span>
+Williams<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;">82<span class="GramE">,1,Hillary</span>
+Clinton<o:p></o:p></span></p>
+
+<span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA"><br clear="all" style="mso-column-break-before:
+always">
+</span>
+
+<p class="MsoNormal">Actual flights.txt:</p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;">7<span class="GramE">,<st1:city w:st="on">Davis</st1:city>,0,<st1:city w:st="on"><st1:place w:st="on">Paris</st1:place></st1:city><o:p></o:p></span></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;">82<span class="GramE">,<st1:city w:st="on">San Francisco</st1:city>,6</span>,<st1:place w:st="on"><st1:city w:st="on">Davis</st1:city></st1:place><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;">101<span class="GramE">,<st1:city w:st="on">Paris</st1:city>,5,<st1:place w:st="on"><st1:city w:st="on">San Francisco</st1:city></st1:place><o:p></o:p></span></span></p>
+
+<p class="MsoNormal"><span style="font-family:&quot;Courier New&quot;">103<span class="GramE">,<st1:city w:st="on">Davis</st1:city>,3,<st1:place w:st="on"><st1:city w:st="on">San Francisco</st1:city></st1:place><o:p></o:p></span></span></p>
+
+<p class="MsoNormal"><o:p>&nbsp;</o:p></p>
+
+</div>
+
+<span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA"><br clear="all" style="page-break-before:auto;
+mso-break-type:section-break">
+</span>
+
+<div class="Section3">
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">&gt;&gt;&gt;
+<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Fly
+By Night Airline Reservation Menu<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">0
+Quit<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span class="GramE"><span style="font-size:8.0pt;font-family:
+&quot;Courier New&quot;">1 Display Flight Info</span></span><span style="font-size:8.0pt;
+font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span class="GramE"><span style="font-size:8.0pt;font-family:
+&quot;Courier New&quot;">2 Display Passenger Info</span></span><span style="font-size:
+8.0pt;font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">3
+Make Reservation<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">4
+Cancel <span class="GramE">Reservation</span><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Your
+choice (0-4): 5<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Your
+choice must be between 0 and 4.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Please
+try again.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Fly
+By Night Airline Reservation Menu<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">0
+Quit<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span class="GramE"><span style="font-size:8.0pt;font-family:
+&quot;Courier New&quot;">1 Display Flight Info</span></span><span style="font-size:8.0pt;
+font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span class="GramE"><span style="font-size:8.0pt;font-family:
+&quot;Courier New&quot;">2 Display Passenger Info</span></span><span style="font-size:
+8.0pt;font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">3
+Make Reservation<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">4
+Cancel <span class="GramE">Reservation</span><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Your
+choice (0-4): <span class="SpellE">asdf</span><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Your
+choice must be between 0 and 4.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Please
+try again.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Fly
+By Night Airline Reservation Menu<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">0
+Quit<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span class="GramE"><span style="font-size:8.0pt;font-family:
+&quot;Courier New&quot;">1 Display Flight Info</span></span><span style="font-size:8.0pt;
+font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span class="GramE"><span style="font-size:8.0pt;font-family:
+&quot;Courier New&quot;">2 Display Passenger Info</span></span><span style="font-size:
+8.0pt;font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">3
+Make Reservation<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">4
+Cancel <span class="GramE">Reservation</span><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Your
+choice (0-4): 1<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Flt
+Origin<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Destination<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>Reserved<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><span style="mso-spacerun:yes">&nbsp; </span>7 <st1:city w:st="on">Davis</st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><st1:city w:st="on"><st1:place w:st="on">Paris</st1:place></st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>0<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><span style="mso-spacerun:yes">&nbsp;</span>82 <st1:city w:st="on">San Francisco</st1:city>
+<st1:city w:st="on"><st1:place w:st="on">Davis</st1:place></st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>6<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">101 <st1:city w:st="on">Paris</st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><st1:city w:st="on"><st1:place w:st="on">San Francisco</st1:place></st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>5<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">103 <st1:city w:st="on">Davis</st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><st1:city w:st="on"><st1:place w:st="on">San Francisco</st1:place></st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>3<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Fly
+By Night Airline Reservation Menu<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">0
+Quit<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span class="GramE"><span style="font-size:8.0pt;font-family:
+&quot;Courier New&quot;">1 Display Flight Info</span></span><span style="font-size:8.0pt;
+font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span class="GramE"><span style="font-size:8.0pt;font-family:
+&quot;Courier New&quot;">2 Display Passenger Info</span></span><span style="font-size:
+8.0pt;font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">3
+Make Reservation<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">4
+Cancel <span class="GramE">Reservation</span><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Your
+choice (0-4): 2<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Name<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Flt Seats<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Bonds,
+Barry<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>103<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>3<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Clinton,
+Hillary<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>82<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>1<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Clinton,
+William<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>82<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>1<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Williams,
+Matt<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>82<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>1<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Williams,
+Vanessa 101<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>2<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Wilson,
+Trevor<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>82<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>3<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Wong,
+Matt<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>101<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>3<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Fly
+By Night Airline Reservation Menu<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">0
+Quit<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span class="GramE"><span style="font-size:8.0pt;font-family:
+&quot;Courier New&quot;">1 Display Flight Info</span></span><span style="font-size:8.0pt;
+font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span class="GramE"><span style="font-size:8.0pt;font-family:
+&quot;Courier New&quot;">2 Display Passenger Info</span></span><span style="font-size:
+8.0pt;font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">3
+Make Reservation<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">4
+Cancel <span class="GramE">Reservation</span><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Your
+choice (0-4): 3<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Flt
+Origin<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Destination<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>Reserved<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><span style="mso-spacerun:yes">&nbsp; </span>7 <st1:city w:st="on">Davis</st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><st1:city w:st="on"><st1:place w:st="on">Paris</st1:place></st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>0<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><span style="mso-spacerun:yes">&nbsp;</span>82 <st1:city w:st="on">San Francisco</st1:city>
+<st1:city w:st="on"><st1:place w:st="on">Davis</st1:place></st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>6<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">101 <st1:city w:st="on">Paris</st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><st1:city w:st="on"><st1:place w:st="on">San Francisco</st1:place></st1:city> <span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;</span>5<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">103 <st1:city w:st="on">Davis</st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><st1:city w:st="on"><st1:place w:st="on">San Francisco</st1:place></st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>3<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Flight
+number: 1<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">We
+do not have that flight number.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Please
+try again.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Flt
+Origin<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Destination<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>Reserved<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><span style="mso-spacerun:yes">&nbsp; </span>7 <st1:city w:st="on">Davis</st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><st1:city w:st="on"><st1:place w:st="on">Paris</st1:place></st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>0<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><span style="mso-spacerun:yes">&nbsp;</span>82 <st1:city w:st="on">San Francisco</st1:city>
+<st1:city w:st="on"><st1:place w:st="on">Davis</st1:place></st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>6<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">101 <st1:city w:st="on">Paris</st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><st1:city w:st="on"><st1:place w:st="on">San Francisco</st1:place></st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>5<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">103 <st1:city w:st="on">Davis</st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><st1:city w:st="on"><st1:place w:st="on">San Francisco</st1:place></st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>3<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Flight
+number: 1324<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">We
+do not have that flight number.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Please
+try again.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Flt
+Origin<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Destination<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>Reserved<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><span style="mso-spacerun:yes">&nbsp; </span>7 <st1:city w:st="on">Davis</st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><st1:city w:st="on"><st1:place w:st="on">Paris</st1:place></st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>0<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><span style="mso-spacerun:yes">&nbsp;</span>82 <st1:city w:st="on">San Francisco</st1:city>
+<st1:city w:st="on"><st1:place w:st="on">Davis</st1:place></st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>6<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">101 <st1:city w:st="on">Paris</st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><st1:city w:st="on"><st1:place w:st="on">San Francisco</st1:place></st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>5<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">103 <st1:city w:st="on">Davis</st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><st1:city w:st="on"><st1:place w:st="on">San Francisco</st1:place></st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>3<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Flight
+number: <span class="SpellE">qrewoi</span><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">We
+do not have that flight number.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Please
+try again.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Flt
+Origin<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Destination<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>Reserved<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><span style="mso-spacerun:yes">&nbsp; </span>7 <st1:city w:st="on">Davis</st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><st1:city w:st="on"><st1:place w:st="on">Paris</st1:place></st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>0<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><span style="mso-spacerun:yes">&nbsp;</span>82 <st1:city w:st="on">San Francisco</st1:city>
+<st1:city w:st="on"><st1:place w:st="on">Davis</st1:place></st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>6<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">101 <st1:city w:st="on">Paris</st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><st1:city w:st="on"><st1:place w:st="on">San Francisco</st1:place></st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>5<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">103 <st1:city w:st="on">Davis</st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><st1:city w:st="on"><st1:place w:st="on">San Francisco</st1:place></st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>3<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Flight
+number: 7<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Number
+of the seats for the flight (1 - 6): 8<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">The
+number of seats must be between 1 and 6.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Please
+try again.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Number
+of the seats for the flight (1 - 6): <span class="SpellE">asdf</span><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">The
+number of seats must be between 1 and 6.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Please
+try again.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Number
+of the seats for the flight (1 - 6): 3<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Your
+name: <st1:personname w:st="on">Sean Davis</st1:personname><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Fly
+By Night Airline Reservation Menu<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">0
+Quit<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span class="GramE"><span style="font-size:8.0pt;font-family:
+&quot;Courier New&quot;">1 Display Flight Info</span></span><span style="font-size:8.0pt;
+font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span class="GramE"><span style="font-size:8.0pt;font-family:
+&quot;Courier New&quot;">2 Display Passenger Info</span></span><span style="font-size:
+8.0pt;font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">3
+Make Reservation<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">4
+Cancel <span class="GramE">Reservation</span><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Your
+choice (0-4): 1<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Flt
+Origin<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Destination<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>Reserved<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><span style="mso-spacerun:yes">&nbsp; </span>7 <st1:city w:st="on">Davis</st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><st1:city w:st="on"><st1:place w:st="on">Paris</st1:place></st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>3<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><span style="mso-spacerun:yes">&nbsp;</span>82 <st1:city w:st="on">San Francisco</st1:city>
+<st1:city w:st="on"><st1:place w:st="on">Davis</st1:place></st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>6<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">101 <st1:city w:st="on">Paris</st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><st1:city w:st="on"><st1:place w:st="on">San Francisco</st1:place></st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>5<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">103 <st1:city w:st="on">Davis</st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><st1:city w:st="on"><st1:place w:st="on">San Francisco</st1:place></st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>3<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Fly
+By Night Airline Reservation Menu<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">0
+Quit<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span class="GramE"><span style="font-size:8.0pt;font-family:
+&quot;Courier New&quot;">1 Display Flight Info</span></span><span style="font-size:8.0pt;
+font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span class="GramE"><span style="font-size:8.0pt;font-family:
+&quot;Courier New&quot;">2 Display Passenger Info</span></span><span style="font-size:
+8.0pt;font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">3
+Make Reservation<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">4
+Cancel <span class="GramE">Reservation</span><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Your
+choice (0-4): 2<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Name<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Flt Seats<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Bonds,
+Barry<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>103<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>3<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Clinton,
+Hillary<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>82<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>1<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Clinton,
+William<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>82<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>1<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Davis,
+Sean<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>7<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>3<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Williams,
+Matt<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>82<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>1<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Williams,
+Vanessa 101<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>2<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Wilson,
+Trevor<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>82<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>3<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Wong,
+Matt<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>101<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>3<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Fly
+By Night Airline Reservation Menu<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">0
+Quit<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span class="GramE"><span style="font-size:8.0pt;font-family:
+&quot;Courier New&quot;">1 Display Flight Info</span></span><span style="font-size:8.0pt;
+font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span class="GramE"><span style="font-size:8.0pt;font-family:
+&quot;Courier New&quot;">2 Display Passenger Info</span></span><span style="font-size:
+8.0pt;font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">3
+Make Reservation<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">4
+Cancel <span class="GramE">Reservation</span><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Your
+choice (0-4): 4<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Flt
+Origin<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="mso-spacerun:yes">&nbsp;&nbsp;</span>Destination<span style="mso-spacerun:yes">&nbsp;&nbsp;
+</span>Reserved<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><span style="mso-spacerun:yes">&nbsp; </span>7 <st1:city w:st="on">Davis</st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><st1:city w:st="on"><st1:place w:st="on">Paris</st1:place></st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>3<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><span style="mso-spacerun:yes">&nbsp;</span>82 <st1:city w:st="on">San Francisco</st1:city>
+<st1:city w:st="on"><st1:place w:st="on">Davis</st1:place></st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>6<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">101 <st1:city w:st="on">Paris</st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><st1:city w:st="on"><st1:place w:st="on">San Francisco</st1:place></st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>5<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">103 <st1:city w:st="on">Davis</st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><st1:city w:st="on"><st1:place w:st="on">San Francisco</st1:place></st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>3<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Flight
+number: 7<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Number
+of the seats for the flight (1 - 6): 6<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Your
+name: <st1:personname w:st="on">Sean Davis</st1:personname><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">You
+do not have the number of seats on that flight.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Fly
+By Night Airline Reservation Menu<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">0
+Quit<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span class="GramE"><span style="font-size:8.0pt;font-family:
+&quot;Courier New&quot;">1 Display Flight Info</span></span><span style="font-size:8.0pt;
+font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span class="GramE"><span style="font-size:8.0pt;font-family:
+&quot;Courier New&quot;">2 Display Passenger Info</span></span><span style="font-size:
+8.0pt;font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">3
+Make Reservation<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">4
+Cancel <span class="GramE">Reservation</span><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Your
+choice (0-4): 4<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Flt
+Origin<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Destination<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>Reserved<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><span style="mso-spacerun:yes">&nbsp; </span>7 <st1:city w:st="on">Davis</st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><st1:city w:st="on"><st1:place w:st="on">Paris</st1:place></st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>3<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><span style="mso-spacerun:yes">&nbsp;</span>82 <st1:city w:st="on">San Francisco</st1:city>
+<st1:city w:st="on"><st1:place w:st="on">Davis</st1:place></st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>6<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">101 <st1:city w:st="on">Paris</st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><st1:city w:st="on"><st1:place w:st="on">San Francisco</st1:place></st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>5<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">103 <st1:city w:st="on">Davis</st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><st1:city w:st="on"><st1:place w:st="on">San Francisco</st1:place></st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>3<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Flight
+number: 7<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Number
+of the seats for the flight (1 - 6): 3<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Your
+name: <st1:personname w:st="on">Sean Davis</st1:personname><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">We
+have cancelled 3 seats on Flight #7 for you.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Fly
+By Night Airline Reservation Menu<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">0
+Quit<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span class="GramE"><span style="font-size:8.0pt;font-family:
+&quot;Courier New&quot;">1 Display Flight Info</span></span><span style="font-size:8.0pt;
+font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span class="GramE"><span style="font-size:8.0pt;font-family:
+&quot;Courier New&quot;">2 Display Passenger Info</span></span><span style="font-size:
+8.0pt;font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">3
+Make Reservation<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">4
+Cancel <span class="GramE">Reservation</span><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Your
+choice (0-4): 1<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Flt
+Origin<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Destination<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>Reserved<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><span style="mso-spacerun:yes">&nbsp; </span>7 <st1:city w:st="on">Davis</st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><st1:city w:st="on"><st1:place w:st="on">Paris</st1:place></st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>0<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><span style="mso-spacerun:yes">&nbsp;</span>82 <st1:city w:st="on">San Francisco</st1:city>
+<st1:city w:st="on"><st1:place w:st="on">Davis</st1:place></st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>6<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">101 <st1:city w:st="on">Paris</st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><st1:city w:st="on"><st1:place w:st="on">San Francisco</st1:place></st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>5<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">103 <st1:city w:st="on">Davis</st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><st1:city w:st="on"><st1:place w:st="on">San Francisco</st1:place></st1:city><span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp; </span>3<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Fly
+By Night Airline Reservation Menu<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">0
+Quit<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span class="GramE"><span style="font-size:8.0pt;font-family:
+&quot;Courier New&quot;">1 Display Flight Info</span></span><span style="font-size:8.0pt;
+font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span class="GramE"><span style="font-size:8.0pt;font-family:
+&quot;Courier New&quot;">2 Display Passenger Info</span></span><span style="font-size:
+8.0pt;font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">3
+Make Reservation<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">4
+Cancel <span class="GramE">Reservation</span><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Your
+choice (0-4): 2<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Name<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>Flt Seats<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Bonds,
+Barry<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>103<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>3<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Clinton,
+Hillary<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>82<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>1<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Clinton,
+William<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>82<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>1<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Williams,
+Matt<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>82<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>1<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Williams,
+Vanessa 101<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>2<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Wilson,
+Trevor<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp; </span>82<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>3<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Wong,
+Matt<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>101<span style="mso-spacerun:yes">&nbsp;&nbsp; </span>3<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Fly
+By Night Airline Reservation Menu<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">0
+Quit<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span class="GramE"><span style="font-size:8.0pt;font-family:
+&quot;Courier New&quot;">1 Display Flight Info</span></span><span style="font-size:8.0pt;
+font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span class="GramE"><span style="font-size:8.0pt;font-family:
+&quot;Courier New&quot;">2 Display Passenger Info</span></span><span style="font-size:
+8.0pt;font-family:&quot;Courier New&quot;"><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">3
+Make Reservation<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">4
+Cancel <span class="GramE">Reservation</span><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">Your
+choice (0-4): 0<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:8.0pt;font-family:&quot;Courier New&quot;">&gt;&gt;&gt;<o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+
+
+
+</o:smarttagtype></o:smarttagtype></o:smarttagtype></body></html>

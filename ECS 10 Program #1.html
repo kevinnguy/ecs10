@@ -1,0 +1,1038 @@
+
+<!-- saved from url=(0052)http://csiflabs.cs.ucdavis.edu/~ssdavis/10/prog1.htm -->
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:m="http://schemas.microsoft.com/office/2004/12/omml" xmlns="http://www.w3.org/TR/REC-html40"><script type="text/javascript">window["_gaUserPrefs"] = { ioo : function() { return true; } }</script><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<meta name="ProgId" content="Word.Document">
+<meta name="Generator" content="Microsoft Word 12">
+<meta name="Originator" content="Microsoft Word 12">
+<link rel="File-List" href="http://csiflabs.cs.ucdavis.edu/~ssdavis/10/prog1_files/filelist.xml">
+<title>ECS 10 Program #1</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Sean Davis</o:Author>
+  <o:Template>ECS 40 Lecture.dot</o:Template>
+  <o:LastAuthor>Sean Davis</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>5</o:TotalTime>
+  <o:LastPrinted>2009-06-23T18:16:00Z</o:LastPrinted>
+  <o:Created>2009-06-23T18:16:00Z</o:Created>
+  <o:LastSaved>2009-06-23T18:16:00Z</o:LastSaved>
+  <o:Pages>3</o:Pages>
+  <o:Words>446</o:Words>
+  <o:Characters>2545</o:Characters>
+  <o:Company>Computer Science Dept., UC at Davis</o:Company>
+  <o:Lines>21</o:Lines>
+  <o:Paragraphs>5</o:Paragraphs>
+  <o:CharactersWithSpaces>2986</o:CharactersWithSpaces>
+  <o:Version>12.00</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<link rel="themeData" href="http://csiflabs.cs.ucdavis.edu/~ssdavis/10/prog1_files/themedata.thmx">
+<link rel="colorSchemeMapping" href="http://csiflabs.cs.ucdavis.edu/~ssdavis/10/prog1_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:DisplayHorizontalDrawingGridEvery>0</w:DisplayHorizontalDrawingGridEvery>
+  <w:DisplayVerticalDrawingGridEvery>0</w:DisplayVerticalDrawingGridEvery>
+  <w:UseMarginsForDrawingGridOrigin/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:DontVertAlignCellWithSp/>
+   <w:DontBreakConstrainedForcedTables/>
+   <w:DontVertAlignInTxbx/>
+   <w:Word11KerningPairs/>
+   <w:CachedColBalance/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" LatentStyleCount="267">
+  <w:LsdException Locked="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:1;
+	mso-generic-font-family:roman;
+	mso-font-format:other;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:1627400839 -2147483648 8 0 66047 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	text-indent:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	mso-list:l2 level1 lfo2;
+	tab-stops:list .25in;
+	font-size:14.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Arial","sans-serif";
+	mso-bidi-font-family:"Times New Roman";
+	mso-font-kerning:14.0pt;
+	mso-bidi-font-weight:normal;}
+h2
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:.5in;
+	text-indent:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	mso-list:l2 level2 lfo2;
+	tab-stops:list .75in;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Arial","sans-serif";
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-font-weight:normal;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+h3
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:1.0in;
+	text-indent:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	mso-list:l2 level3 lfo2;
+	tab-stops:list 1.25in;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Arial","sans-serif";
+	mso-bidi-font-family:"Times New Roman";
+	font-weight:normal;}
+h4
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:1.5in;
+	text-indent:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	mso-list:l2 level4 lfo2;
+	tab-stops:list 1.75in;
+	font-size:12.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Arial","sans-serif";
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-font-weight:normal;}
+h5
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:2.0in;
+	text-indent:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:5;
+	mso-list:l2 level5 lfo2;
+	tab-stops:list 2.25in;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	font-weight:normal;}
+h6
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:2.5in;
+	text-indent:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:6;
+	mso-list:l2 level6 lfo2;
+	tab-stops:list 2.75in;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman","serif";
+	font-weight:normal;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:3.0in;
+	text-indent:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:7;
+	mso-list:l2 level7 lfo2;
+	tab-stops:list 3.25in;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:3.5in;
+	text-indent:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:8;
+	mso-list:l2 level8 lfo2;
+	tab-stops:list 3.75in;
+	font-size:10.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:4.0in;
+	text-indent:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:9;
+	mso-list:l2 level9 lfo2;
+	tab-stops:list 4.25in;
+	font-size:9.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Arial","sans-serif";
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	font-weight:bold;
+	mso-bidi-font-weight:normal;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+p.MsoBodyText, li.MsoBodyText, div.MsoBodyText
+	{mso-style-unhide:no;
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{mso-style-unhide:no;
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-unhide:no;
+	color:purple;
+	mso-themecolor:followedhyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-unhide:no;
+	mso-style-link:"Balloon Text Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-fareast-font-family:"Times New Roman";}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Balloon Text";
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;
+	font-family:"Tahoma","sans-serif";
+	mso-ascii-font-family:Tahoma;
+	mso-hansi-font-family:Tahoma;
+	mso-bidi-font-family:Tahoma;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:.5in .5in .5in .5in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:495268156;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1561915174 67698703 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l0:level1
+	{mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;}
+@list l1
+	{mso-list-id:563876303;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-377078790 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l1:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2
+	{mso-list-id:803817208;
+	mso-list-template-ids:67698727;}
+@list l2:level1
+	{mso-level-number-format:roman-upper;
+	mso-level-style-link:"Heading 1";
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:0in;
+	text-indent:0in;}
+@list l2:level2
+	{mso-level-number-format:alpha-upper;
+	mso-level-style-link:"Heading 2";
+	mso-level-tab-stop:.75in;
+	mso-level-number-position:left;
+	margin-left:.5in;
+	text-indent:0in;}
+@list l2:level3
+	{mso-level-style-link:"Heading 3";
+	mso-level-tab-stop:1.25in;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:0in;}
+@list l2:level4
+	{mso-level-number-format:alpha-lower;
+	mso-level-style-link:"Heading 4";
+	mso-level-text:"%4\)";
+	mso-level-tab-stop:1.75in;
+	mso-level-number-position:left;
+	margin-left:1.5in;
+	text-indent:0in;}
+@list l2:level5
+	{mso-level-style-link:"Heading 5";
+	mso-level-text:"\(%5\)";
+	mso-level-tab-stop:2.25in;
+	mso-level-number-position:left;
+	margin-left:2.0in;
+	text-indent:0in;}
+@list l2:level6
+	{mso-level-number-format:alpha-lower;
+	mso-level-style-link:"Heading 6";
+	mso-level-text:"\(%6\)";
+	mso-level-tab-stop:2.75in;
+	mso-level-number-position:left;
+	margin-left:2.5in;
+	text-indent:0in;}
+@list l2:level7
+	{mso-level-number-format:roman-lower;
+	mso-level-style-link:"Heading 7";
+	mso-level-text:"\(%7\)";
+	mso-level-tab-stop:3.25in;
+	mso-level-number-position:left;
+	margin-left:3.0in;
+	text-indent:0in;}
+@list l2:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-style-link:"Heading 8";
+	mso-level-text:"\(%8\)";
+	mso-level-tab-stop:3.75in;
+	mso-level-number-position:left;
+	margin-left:3.5in;
+	text-indent:0in;}
+@list l2:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-style-link:"Heading 9";
+	mso-level-text:"\(%9\)";
+	mso-level-tab-stop:4.25in;
+	mso-level-number-position:left;
+	margin-left:4.0in;
+	text-indent:0in;}
+@list l3
+	{mso-list-id:1328022543;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-854565506 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l3:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l4
+	{mso-list-id:1379083161;
+	mso-list-type:simple;
+	mso-list-template-ids:67698703;}
+@list l4:level1
+	{mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l5
+	{mso-list-id:1425609355;
+	mso-list-type:hybrid;
+	mso-list-template-ids:180025250 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l5:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l6
+	{mso-list-id:1643657784;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1561915174 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l6:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l7
+	{mso-list-id:2144229163;
+	mso-list-type:simple;
+	mso-list-template-ids:67698703;}
+@list l7:level1
+	{mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+<script type="text/javascript" src="chrome-extension://bfbmjmiodbnnpllbbbfblcplfjjepjdn/js/injected.js"></script></head>
+
+<body lang="EN-US" link="blue" vlink="purple" style="tab-interval:.5in">
+
+<div class="Section1">
+
+<table class="MsoNormalTable" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;mso-padding-alt:0in 5.4pt 0in 5.4pt">
+ <tbody><tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;mso-yfti-lastrow:yes">
+  <td width="296" valign="top" style="width:177.3pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt">ECS 10<o:p></o:p></span></b></p>
+  </td>
+  <td width="296" valign="top" style="width:177.3pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" align="center" style="text-align:center"><b style="mso-bidi-font-weight:normal"><span style="font-size:11.0pt;mso-bidi-font-size:
+  10.0pt">Program #1 (50 pts)<o:p></o:p></span></b></p>
+  </td>
+  <td width="326" valign="top" style="width:195.3pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal" align="right" style="text-align:right"><b style="mso-bidi-font-weight:
+  normal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt">Summer 2009<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+</tbody></table>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt">Due:
+Tuesday, June 30<sup>th</sup>, 4pm for all written homework, flow charts, and
+error journals. 11:59pm for programs.<span style="mso-tab-count:1">&nbsp;&nbsp;&nbsp; </span><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt">File
+names: avg2.py, convert.py, futval.py, futval2.py, miles.py.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt">Written
+homework: p. 48 #2, #4<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><span style="mso-spacerun:yes">&nbsp;</span>For this assignment you will be writing five
+Python programs based on Programming Exercises from Chapter 2.<span style="mso-spacerun:yes">&nbsp; </span>The output of your programs must match mine
+exactly.<span style="mso-spacerun:yes">&nbsp; </span>Appendix B of the text provides
+guidelines for downloading and using IDLE, the Python development environment.<span style="mso-spacerun:yes">&nbsp; </span>Please submit your programs on the <span class="SpellE">SmartSite</span> website.<span style="mso-spacerun:yes">&nbsp;
+</span>You will also need to turn in hard copies of the programs, your error
+journals, flow charts, and written homework Tuesday morning at 8am.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<ol style="margin-top:0in" start="1" type="1">
+ <li class="MsoNormal" style="mso-list:l5 level1 lfo8;tab-stops:list .5in"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt">Programming Exercise #2<o:p></o:p></span></li>
+</ol>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Courier New&quot;">[davis@lect15 p1]$ <span class="GramE">python</span>
+avg2.py<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Courier New&quot;">This program computes the average of three exam
+scores.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Courier New&quot;">Enter three scores separated by commas: 12, 15<span class="GramE">,25</span><o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Courier New&quot;">The average of the scores is: 17.3333333333<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Courier New&quot;">[davis@lect15 p1]$ <o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-size:11.0pt;
+mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<ol style="margin-top:0in" start="2" type="1">
+ <li class="MsoNormal" style="mso-list:l5 level1 lfo8;tab-stops:list .5in"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt">Programming Exercise #4<o:p></o:p></span></li>
+</ol>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Courier New&quot;">[davis@lect15 p1]$ <span class="GramE">python</span>
+convert.py<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Courier New&quot;">0 degrees Celsius is 32.0 degrees Fahrenheit.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Courier New&quot;">10 degrees Celsius is 50.0 degrees Fahrenheit.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Courier New&quot;">20 degrees Celsius is 68.0 degrees Fahrenheit.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Courier New&quot;">30 degrees Celsius is 86.0 degrees Fahrenheit.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Courier New&quot;">40 degrees Celsius is 104.0 degrees Fahrenheit.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Courier New&quot;">50 degrees Celsius is 122.0 degrees Fahrenheit.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Courier New&quot;">60 degrees Celsius is 140.0 degrees Fahrenheit.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Courier New&quot;">70 degrees Celsius is 158.0 degrees Fahrenheit.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Courier New&quot;">80 degrees Celsius is 176.0 degrees Fahrenheit.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Courier New&quot;">90 degrees Celsius is 194.0 degrees Fahrenheit.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Courier New&quot;">100 degrees Celsius is 212.0 degrees Fahrenheit.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Courier New&quot;">[davis@lect15 p1]$ <o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-size:11.0pt;
+mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<ol style="margin-top:0in" start="3" type="1">
+ <li class="MsoNormal" style="mso-list:l5 level1 lfo8;tab-stops:list .5in"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt">Programming Exercise
+     #6.<span style="mso-spacerun:yes">&nbsp; </span>Your program must show the
+     principal at the end of each year.<o:p></o:p></span></li>
+</ol>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Courier New&quot;">[davis@lect15 p1]$ <span class="GramE">python</span>
+futval.py<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Courier New&quot;">This program calculates the future value<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span class="GramE"><span style="font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:&quot;Courier New&quot;">of</span></span><span style="font-size:11.0pt;
+mso-bidi-font-size:10.0pt;font-family:&quot;Courier New&quot;"> a 10-year investment.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Courier New&quot;">Enter the amount invested each year: 100.00<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Courier New&quot;">Enter the annual interest rate: 0.05<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Courier New&quot;">Enter the number of years: 10<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Courier New&quot;">The value in 1 <span class="GramE">years</span> is
+105.0<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Courier New&quot;">The value in 2 years is 215.25<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Courier New&quot;">The value in 3 years is 331.0125<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Courier New&quot;">The value in 4 years is 452.563125<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Courier New&quot;">The value in 5 years is 580.19128125<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Courier New&quot;">The value in 6 years is 714.200845313<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Courier New&quot;">The value in 7 years is 854.910887578<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Courier New&quot;">The value in 8 years is 1002.65643196<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Courier New&quot;">The value in 9 years is 1157.78925355<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Courier New&quot;">The value in 10 years is 1320.67871623<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Courier New&quot;">[davis@lect15 p1]$ <o:p></o:p></span></p>
+
+<span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA"><br clear="all" style="mso-special-character:line-break;
+page-break-before:always">
+</span>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-size:11.0pt;
+mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<ol style="margin-top:0in" start="4" type="1">
+ <li class="MsoNormal" style="mso-list:l5 level1 lfo8;tab-stops:list .5in"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt">Programming Exercise #7
+     with the file named futval2.py<o:p></o:p></span></li>
+</ol>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Courier New&quot;">[davis@lect15 p1]$ <span class="GramE">python</span>
+futval2.py<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Courier New&quot;">This program calculates the future value<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span class="GramE"><span style="font-size:11.0pt;mso-bidi-font-size:
+10.0pt;font-family:&quot;Courier New&quot;">of</span></span><span style="font-size:11.0pt;
+mso-bidi-font-size:10.0pt;font-family:&quot;Courier New&quot;"> a 10-year investment.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Courier New&quot;">Enter the <span class="SpellE">intial</span>
+principal: 1000.00<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Courier New&quot;">Enter the yearly rate: 0.05<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Courier New&quot;">Enter the number of times interest is compounded
+each year: 4<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Courier New&quot;">The value in 10 years is 1643.61946349<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Courier New&quot;">[davis@lect15 p1]$ <o:p></o:p></span></p>
+
+<p class="MsoNormal" style="margin-left:.25in"><span style="font-size:11.0pt;
+mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<ol style="margin-top:0in" start="5" type="1">
+ <li class="MsoNormal" style="mso-list:l5 level1 lfo8;tab-stops:list .5in"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt">Programming Exercise
+     #9.<o:p></o:p></span></li>
+</ol>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Courier New&quot;"><span style="mso-spacerun:yes">&nbsp;</span>[davis@lect15
+p1]$ <span class="GramE">python</span> miles.py<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Courier New&quot;">This program converts distances measured in
+kilometers to miles.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Courier New&quot;">Enter the number of kilometers: 100<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Courier New&quot;">100 kilometers is 62.0 miles.<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;
+font-family:&quot;Courier New&quot;">[davis@lect15 p1]$<o:p></o:p></span></p>
+
+<span style="font-size:11.0pt;mso-bidi-font-size:10.0pt;font-family:&quot;Times New Roman&quot;,&quot;serif&quot;;
+mso-fareast-font-family:&quot;Times New Roman&quot;;mso-ansi-language:EN-US;mso-fareast-language:
+EN-US;mso-bidi-language:AR-SA"><br clear="all" style="page-break-before:always">
+</span>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt">Name___________________________________<o:p></o:p></span></p>
+
+<p class="MsoNormal" align="right" style="text-align:right"><span style="font-size:
+11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal" align="center" style="text-align:center"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt">ERROR JOURNAL EXAMPLE<o:p></o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt">Compile
+Time Errors:<o:p></o:p></span></p>
+
+<table class="MsoNormalTable" border="1" cellspacing="0" cellpadding="0" style="border-collapse:collapse;border:none;mso-border-alt:solid black .75pt;
+ mso-yfti-tbllook:183;mso-padding-alt:0in 5.4pt 0in 5.4pt;mso-border-insideh:
+ .75pt solid black;mso-border-insidev:.75pt solid black">
+ <tbody><tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes">
+  <td width="204" valign="top" style="width:1.7in;border:solid black 1.0pt;
+  mso-border-alt:solid black .75pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt">Error
+  Message<o:p></o:p></span></p>
+  </td>
+  <td width="300" valign="top" style="width:2.5in;border:solid black 1.0pt;
+  border-left:none;mso-border-left-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt">Your
+  description of<span style="mso-spacerun:yes">&nbsp; </span>the error<o:p></o:p></span></p>
+  </td>
+  <td width="405" valign="top" style="width:243.0pt;border:solid black 1.0pt;
+  border-left:none;mso-border-left-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt">How
+  you corrected the error<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:1">
+  <td width="204" valign="top" style="width:1.7in;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width="300" valign="top" style="width:2.5in;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:
+  solid black .75pt;mso-border-left-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width="405" valign="top" style="width:243.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:2">
+  <td width="204" valign="top" style="width:1.7in;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width="300" valign="top" style="width:2.5in;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:
+  solid black .75pt;mso-border-left-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width="405" valign="top" style="width:243.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:3">
+  <td width="204" valign="top" style="width:1.7in;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width="300" valign="top" style="width:2.5in;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:
+  solid black .75pt;mso-border-left-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width="405" valign="top" style="width:243.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style="mso-yfti-irow:4;mso-yfti-lastrow:yes">
+  <td width="204" valign="top" style="width:1.7in;border:solid black 1.0pt;
+  border-top:none;mso-border-top-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width="300" valign="top" style="width:2.5in;border-top:none;border-left:none;
+  border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;mso-border-top-alt:
+  solid black .75pt;mso-border-left-alt:solid black .75pt;mso-border-alt:solid black .75pt;
+  padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+  </td>
+  <td width="405" valign="top" style="width:243.0pt;border-top:none;border-left:
+  none;border-bottom:solid black 1.0pt;border-right:solid black 1.0pt;
+  mso-border-top-alt:solid black .75pt;mso-border-left-alt:solid black .75pt;
+  mso-border-alt:solid black .75pt;padding:0in 5.4pt 0in 5.4pt">
+  <p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+</tbody></table>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+
+<p class="MsoNormal"><span style="font-size:11.0pt;mso-bidi-font-size:10.0pt"><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+
+
+
+</body></html>
